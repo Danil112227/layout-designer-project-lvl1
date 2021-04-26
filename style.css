@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+
     box-sizing: border-box;
 }
 
@@ -8,6 +9,7 @@ body {
     font-family: Open Sans, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
+
     color: #2A2626;
 }
 
@@ -29,7 +31,23 @@ h3 {
 }
 
 section {
-    max-width: 1110px;
-    text-align: center;
     padding: 100px 0;
+
+    max-width: 1110px;
+
+    text-align: center;
+}
+
+header ::before{
+    
+    content: url(/img/background.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 10%;
+}
+
+header {
+    max-width: 1110px;
 }
