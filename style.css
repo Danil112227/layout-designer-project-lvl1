@@ -15,15 +15,17 @@ body {
 
 h1, h2, h3 {
     line-height: 1.2em;
+    font-family: Neucha; 
+    font-weight: normal;  
 }
 
 h1 {
     font-size: 72px;
+    white-space: nowrap;
 }
 
 h2 {
     font-size: 60px;
-
 }
 
 h3 {
@@ -38,16 +40,133 @@ section {
     text-align: center;
 }
 
-header ::before{
-    
-    content: url(/img/background.png);
+/* ---------HEADER-------- */
 
+.header {
+    position: relative;
+    padding-bottom: 189px;
+
+}
+
+.background::before{
+    content: "";
+    
+    position: absolute;
+  
+    
+    background-color: rgb(160, 166, 180);
+    background-image: url(/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    width: 100%;
+    height: 100%;
 
     opacity: 10%;
 }
 
-header {
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    padding: 100px 0;
+    
+    display: flex;
+    justify-content: space-between;
+
     max-width: 1110px;
 }
+
+.computer {
+position: absolute;
+top: 55px;
+right: -270px;
+
+height: 525px;
+}
+
+span {
+    color: #FE8A02;
+}
+
+.text {
+    margin: 0 auto;
+    padding-top: 122px;
+    display: flex;
+
+
+    max-width: 1110px;
+}
+
+.first {
+    margin-right: 30px;
+
+    width: 540px;
+}
+
+.second {
+    width: 540px;
+    position: relative;
+}
+
+.btn {
+    padding: 12px 24px;
+    position: absolute;
+    bottom: -90px;
+    
+    font-weight: bold;
+    text-decoration: none;
+
+    color: white;
+    background: #FE8A02;
+
+}
+
+/* ------END HEADER------ */
+
+/* ------MAIN------- */
+
+.main {
+    margin-top: 100px;
+
+    background-color: #fff;
+}
+
+.title_center {
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.title_center h1 {
+    padding-bottom: 30px;
+}
+
+.wrapper_2 {
+    padding: 0 ;
+    padding-bottom: 485px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.vid {
+    position: relative;
+    
+    padding-top: 30px;
+
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.vid iframe {
+    position: absolute;
+    left: 50%;
+    bottom: -569px;
+
+    margin-left: -460px;
+}
+
+/* ------END MAIN----- */
+
+
+
+
