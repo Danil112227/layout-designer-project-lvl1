@@ -48,18 +48,19 @@ a {
 }
 
 /* ---------HEADER-------- */
-
-.header {
-    position: relative;
+header{
     padding-bottom: 189px;
+    position: relative;
 }
+
 
 .background::before{
     content: "";
     
     position: absolute;
-  
-    
+
+    display: block;
+
     background-color: rgb(160, 166, 180);
     background-image: url(/img/background.png);
     background-repeat: no-repeat;
@@ -252,13 +253,73 @@ span {
     line-height: 1em;
 }
 
-
-
-
-
-
-
-
-
-
 /* --------END MENU------ */
+
+/* -------TYPES------- */
+.types {
+    position: relative;
+
+    padding: 0;
+}
+
+.image {
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.title_effect {
+    padding-left: 30px;
+
+    text-align: left;
+}
+
+.title_effect h2 {
+    padding-bottom: 30px;
+}
+
+.title_grey {
+    font-family: Neucha, sans-serif;
+    font-size: 24px;
+
+    color: #908D8B;
+}
+
+.mini_footer {
+    padding-bottom: 100px;
+    margin: 0 auto;
+
+    max-width: 1110px;
+
+    text-align: left;
+}
+
+.how { 
+    font-size: 14px;
+    font-family:  Open Sans, sans-serif;
+
+    background: #B09A81;
+    color: #fff;
+}
+
+.text_types {
+    padding: 20px 0 0 0;
+}
+
+.bg_brown {
+    background: #B09A81;
+
+    color: #fff;
+}
+
+.bg_brown .title_grey {
+    color: #D7CCC0;
+}
+
+.how_bg {
+    color:#B09A81;
+
+    background: #fff;
+}
+
+
+
+/* ---------END TYPES-------- */
