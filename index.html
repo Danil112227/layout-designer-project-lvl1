@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <title>Когнитивное искажение </title>   
 </head>
 <body>
@@ -195,18 +196,25 @@
             </div>
         </div>
     </section>
-
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-           $("#menu").on("click","a", function (event) {
-               event.preventDefault();
-               var id  = $(this).attr('href'),
-                   top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1500);
-           });
-       });
-       </script>
-       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <footer>
+            <div class="wrapper wrapper_foot">
+                <form action="#" method="GET" enctype="multipart/form-data">
+                    <h3>Хотите узнать больше?<br>Подпишитесь на обновления</h3>
+                    <div class="email_div">
+                        <p>Электронная почта</p>
+                        <div class="place">
+                            <input type="email" name="email" class="email" placeholder="Ваша электронная почта">
+                            <a href="#" class="btn_2"></a>
+                        </div>
+                        <p class="accept">Подписываясь, вы принимаете <a href="#">правила сервиса</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="info">
+                <p>© 2021 Шпартько Данил Андреевич</p>
+                <p>По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+                <p><a href="https://ru.hexlet.io/my">Курсы программирования Hexlet</a></p>
+            </div>
+    </footer>
 </body>
 </html>
