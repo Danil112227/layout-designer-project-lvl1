@@ -253,7 +253,7 @@ span {
 
 .card h3 {
     color: #FE8A02;
-    
+
 }
 
 .number {
@@ -360,6 +360,8 @@ form {
     height: 50px;
 
     padding: 15px;
+
+    border: 1px solid #E3E3E3;
 }
 
 .email_div p {
